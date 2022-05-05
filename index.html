@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Marvel</title>
+  </head>
+
+  <body>
+    <section class="changebg">
+      <header>
+        <a href=""><img src="PNG/avenger/avenger logo.png" alt="" /></a>
+      </header>
+      <div class="contentBx">
+        <h2 id="Heading">Captain&nbsp;America</h2>
+        <p id="text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora.
+          Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est
+          tenetur fuga? Animi sunt iste, laudantium quis saepe quasi explicabo.
+        </p>
+        <a href="https://www.marvel.com/" target="_blank" id="link">Detail</a>
+      </div>
+      <div class="imgbox">
+        <img src="PNG/avenger/captain-america.png" alt="" id="slider" />
+      </div>
+      <ul class="navigation">
+        <li
+          onclick="imgSlider('PNG/avenger/captain-america.png'); show1(); changeBgColor(' rgb(39 127 194)')"
+        >
+          <img src=" PNG/avenger/captain-america.png" alt="" />
+        </li>
+
+        <li
+          onclick="imgSlider('PNG/avenger/iron-man.png'); show2();changeBgColor(' rgb(158 60 58)') "
+        >
+          <img src="PNG/avenger/iron-man.png" alt="" />
+        </li>
+        <li
+          onclick="imgSlider('PNG/avenger/spider.png'); show3();changeBgColor('rgb(71 84 104)')"
+        >
+          <img src="PNG/avenger/spider.png" alt="" />
+        </li>
+        <li
+          onclick="imgSlider('PNG/avenger/black_widow.png'); show4();changeBgColor(' rgb(42 47 51)') "
+        >
+          <img src="PNG/avenger/black_widow.png" alt="" />
+        </li>
+        <li
+          onclick="imgSlider('PNG/avenger/thor.png'); show5();changeBgColor(' rgb(133 126 114) ') "
+        >
+          <img src="PNG/avenger/thor.png" alt="" />
+        </li>
+        <li
+          onclick="imgSlider('PNG/avenger/hulk.png');show6();changeBgColor(' rgb(124 158 77)') "
+        >
+          <img src="PNG/avenger/hulk.png" alt="" />
+        </li>
+        <li
+          onclick="imgSlider('PNG/avenger/loki.png');show7();changeBgColor(' rgb(12 105 100)') "
+        >
+          <img src="PNG/avenger/loki.png" alt="" />
+        </li>
+        <li
+          onclick="imgSlider('PNG/avenger/Captain-Marvel.png');show8();changeBgColor(' rgb(183 42 70)') "
+        >
+          <img src="PNG/avenger/Captain-Marvel.png" alt="" />
+        </li>
+        <li
+          onclick="imgSlider('PNG/avenger/furry.png') ;show9();changeBgColor('rgb(97 53 34) ') "
+        >
+          <img src="PNG/avenger/furry.png" alt="" />
+        </li>
+        <li
+          onclick="imgSlider('PNG/avenger/doctor.png');show10();changeBgColor(' rgb(244 140 28) ') "
+        >
+          <img src="PNG/avenger/doctor.png" alt="" />
+        </li>
+        <li
+          onclick="imgSlider('PNG/avenger/antman.png');show11();changeBgColor('rgb(121 138 148) ') "
+        >
+          <img src="PNG/avenger/antman.png" alt="" />
+        </li>
+        <li
+          onclick="imgSlider('PNG/avenger/blackpanther.png');show12();changeBgColor('rgb(24 33 36)') "
+        >
+          <img src="PNG/avenger/blackpanther.png" alt="" />
+        </li>
+        <li
+          onclick="imgSlider('PNG/avenger/thanos2.png');show13();changeBgColor(' rgb(61 68 96) ') "
+        >
+          <img src="PNG/avenger/thanos2.png" alt="" />
+        </li>
+        <li
+          onclick="imgSlider('PNG/avenger/mr-loard.png');show14();changeBgColor(' rgb(152 49 53) ') "
+        >
+          <img src="PNG/avenger/mr-loard.png" alt="" />
+        </li>
+        <li
+          onclick="imgSlider('PNG/avenger/nebula.png') ;show15();changeBgColor(' rgb(70 96 167)') "
+        >
+          <img src="PNG/avenger/nebula.png" alt="" />
+        </li>
+        <li
+          onclick="imgSlider('PNG/avenger/wanda.png') ;show16();changeBgColor(' rgb(181 44 48)') "
+        >
+          <img src="PNG/avenger/wanda.png" alt="" />
+        </li>
+        <li
+          onclick="imgSlider('PNG/avenger/rocket.png') ;show17();changeBgColor(' rgb(54 54 4') "
+        >
+          <img src="PNG/avenger/rocket.png" alt="" />
+        </li>
+        <li
+          onclick="imgSlider('PNG/avenger/groot.png');show18();changeBgColor(' rgb(187 151 111)') "
+        >
+          <img src="PNG/avenger/groot.png" alt="" />
+        </li>
+        <!-- <li
+          onclick="imgSlider('PNG/avenger/ghmora.png');show19();changeBgColor(' rgb(105 162 87) ') "
+        >
+          <img src="PNG/avenger/ghmora.png" alt="" />
+        </li>
+        <li
+          onclick="imgSlider('PNG/avenger/sam.png');show20();changeBgColor('rgb(152 153 157)') "
+        >
+          <img src="PNG/avenger/sam.png" alt="" />
+        </li>
+        <li
+          onclick="imgSlider('PNG/avenger/drax.png');show21();changeBgColor(' rgb(61 68 96)') "
+        >
+          <img src="PNG/avenger/drax.png" alt="" />
+        </li> -->
+      </ul>
+    </section>
+    <script>
+      function imgSlider(anything) {
+        document.getElementById("slider").src = anything;
+      }
+      function changeBgColor(color) {
+        const changebg = document.querySelector(".changebg");
+        {
+          changebg.style.background = color;
+        }
+      }
+      /*function imgSlider() {
+            var opacity = document.getElementsByTagName('li');
+            opacity.style.opacity = '1';
+            if (opacity) {
+                opacity.style.opacity = '0';
+            }
+        }*/
+
+      function show1() {
+        document.getElementById("Heading").innerHTML = "Captain&nbsp;America";
+        document.getElementById("text").innerHTML =
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      }
+      function show2() {
+        document.getElementById("Heading").innerHTML = "Iron Man";
+        document.getElementById("text").innerHTML =
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      }
+      function show3() {
+        document.getElementById("Heading").innerHTML = "Spider Man";
+        document.getElementById("text").innerHTML =
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      }
+      function show4() {
+        document.getElementById("Heading").innerHTML = "Black Widow";
+        document.getElementById("text").innerHTML =
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      }
+      function show5() {
+        document.getElementById("Heading").innerHTML = "Thor";
+        document.getElementById("text").innerHTML =
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      }
+      function show6() {
+        document.getElementById("Heading").innerHTML = "Hulk";
+        document.getElementById("text").innerHTML =
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      }
+      function show7() {
+        document.getElementById("Heading").innerHTML = "Loki";
+        document.getElementById("text").innerHTML =
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      }
+      function show8() {
+        document.getElementById("Heading").innerHTML = "Captain&nbsp;Marvel";
+        document.getElementById("text").innerHTML =
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      }
+      function show9() {
+        document.getElementById("Heading").innerHTML = "Furry";
+        document.getElementById("text").innerHTML =
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      }
+      function show10() {
+        document.getElementById("Heading").innerHTML = "Doctor&nbsp;Strang";
+        document.getElementById("text").innerHTML =
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      }
+      function show11() {
+        document.getElementById("Heading").innerHTML = "Ant Man";
+        document.getElementById("text").innerHTML =
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      }
+      function show12() {
+        document.getElementById("Heading").innerHTML = "Black&nbsp;Panther";
+        document.getElementById("text").innerHTML =
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      }
+      function show13() {
+        document.getElementById("Heading").innerHTML = "Thanos";
+        document.getElementById("text").innerHTML =
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      }
+      function show14() {
+        document.getElementById("Heading").innerHTML = "Star Loard";
+        document.getElementById("text").innerHTML =
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      }
+      function show15() {
+        document.getElementById("Heading").innerHTML = "Nebula";
+        document.getElementById("text").innerHTML =
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      }
+      function show16() {
+        document.getElementById("Heading").innerHTML = "Wanda";
+        document.getElementById("text").innerHTML =
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      }
+      function show17() {
+        document.getElementById("Heading").innerHTML = "Rocket";
+        document.getElementById("text").innerHTML =
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      }
+      function show18() {
+        document.getElementById("Heading").innerHTML = "Groot";
+        document.getElementById("text").innerHTML =
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      }
+      //   function show19() {
+      //     document.getElementById("Heading").innerHTML = "Ghamora";
+      //     document.getElementById("text").innerHTML =
+      //       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      //   }
+      //   function show20() {
+      //     document.getElementById("Heading").innerHTML = "Sam";
+      //     document.getElementById("text").innerHTML =
+      //       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      //   }
+      //   function show21() {
+      //     document.getElementById("Heading").innerHTML = "drax";
+      //     document.getElementById("text").innerHTML =
+      //       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      //   }
+      function show22() {
+        document.getElementById("Heading").innerHTML = "Iron Man";
+        document.getElementById("text").innerHTML =
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, tempora. Nemo, velit dolore? Iure impedit fugiat possimus minus aspernatur est tenetur fuga ? Animi sunt iste, laudantium quis saepequasi explicabo.";
+      }
+    </script>
+    <!-- <script src="aos.js"></script> -->
+  </body>
+</html>
